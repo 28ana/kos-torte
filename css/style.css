@@ -1,0 +1,439 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Ahom&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+/*dancing script*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    background-color: #945d7f;
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button {
+    width: 200px;
+    margin-top: 5vh;
+    /*izmena sa 10%!!!!!!!!!!*/
+    background-color: #4f3243;
+    padding: 10px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #e6afd1;
+    border-radius: 5% 30%;
+    font-size: 12px;
+}
+  
+.button a {
+    color: #fff;
+}
+  
+.button:hover {
+    background-color: #e6afd1;
+    border: 1px solid #4f3243;
+    color: #4f3243;
+}
+
+.naslovi {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 80px;
+    margin-bottom: 10px;
+    animation: fadeInTop 2s ease-out forwards;
+}
+
+.naslovi2{
+    font-family: 'Great Vibes', sans-serif;
+    font-weight: normal;
+    font-size: 55px;
+    padding-bottom: 20px;
+}
+
+.phead{
+    font-family: 'PT Serif', sans-serif;
+}
+
+p, h4{
+    font-family: 'PT Serif', sans-serif;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
+.nav{
+    height: 80px;/*13vh*/
+    width: 100%;
+    padding: 0 5%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    background-color: #945d7f;
+}
+
+.nav.scrolled {
+    background-color: rgb(148, 93, 127, 0.8); 
+}
+
+.dva ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dva ul li a{
+    margin: 0 2rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    position: relative;
+}
+
+.dva ul li a.active{
+    color: #e6afd1;
+}
+
+.dva ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0%;
+    width: 0;  /* Početna širina linije je 0 */
+    height: 2px;  /* Visina linije */
+    background-color: #fff;
+    transition: all .5s;
+
+}
+
+.dva ul li a:hover::before{
+    width: 100%;  /* Linija se širi na 100% širine linka pri hover efektu */
+}
+
+.fa{
+    color: #fff;
+}
+
+.fa:hover{
+    color: #e6afd1;
+}
+
+.jedan {
+    display: flex;
+    align-items: center;
+}
+
+.jedan img {
+    width: 3.5rem;
+}
+
+#span1 {
+    font-family: 'Cookie', sans-serif;
+    color: #000000;
+    font-size: 30px;
+    text-transform: none;
+}
+
+.header {
+    background-color: rgb(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-image: url('../images/pozadina.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    width: 100%;
+    height: 87.5vh;
+    padding-bottom: 5%;
+
+}
+
+#head {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding-left: 50px; */
+}
+
+.tri{
+    width: 50%;
+    color: #fff;
+    /*background-color: rgb(0, 0, 0, 0.5);*/
+    padding: 3px 2px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 430px;
+    padding: 8.5% 5%;
+}
+
+.col{
+    width: 32%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.col2{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.colCard {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+  
+.col h2 {
+    color: #fff;
+}
+  
+.col p {
+    color: #fff;
+}
+
+.card {
+    width: 13vw;
+    height: 40vh;
+    /* width: 150px;
+    height: 350px; */
+    /* display: inline-block; */
+    border: 5px solid #4f3243;
+    border-radius: 10px;
+    /* padding: 15px 5px; */
+    cursor: pointer;
+    /* margin: 10px; */
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.9s;
+  }
+  
+.card1 {
+    background-image: url(../images/dec15.PNG);
+}
+  
+.card2 {
+    background-image: url(../images/wed11.PNG);
+}
+  
+.card3 {
+    background-image: url(../images/slika6.PNG);
+}
+  
+.card4 {
+    background-image: url(../images/kolaci.PNG);
+}
+  
+.card:hover {
+    transform: translateY(-20px);
+}
+  
+.card h5 {
+    color: #fff;
+    background-color: #4f3243;
+    width: 50%;
+    padding: 5% 0;
+    text-align: center;
+    /*text-shadow: 0 0 5px #df3ca8;*/
+    text-transform: uppercase;
+}
+
+.onama {
+    clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0 84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    background-color: #b993aa;
+    padding: 10%;
+}
+
+.radnja {
+    width: 40%;
+}
+  
+.radnja img {
+    width: 80%;
+    border: 10px groove #4f3243;
+    border-radius: 15px;
+}
+
+.rad {
+    width: 30%;
+}
+
+.blog{
+    height: 520px;
+}
+
+.blog1 {
+    padding-left: 200px;
+    color: #fff;
+    padding-bottom: 0;
+}
+  
+.articles {
+    padding: 0rem 3rem 5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    gap: 3rem;
+    justify-content: center;
+}
+  
+.article {
+    background: #f9f9f9de;
+    border: 5px solid #4f3243;
+    border-radius: 2%;
+    width: 100%;
+}
+  
+.article img {
+    width: 100%;
+}
+
+.article h2 {
+    text-align: center;
+    margin: 5px 20px;
+}
+  
+.article p {
+    margin: 0 10px;
+}
+
+.article .button {
+    width: 50%;
+    margin: 0.3rem 0 0.8rem 1rem;
+}
+
+.poruci {
+    clip-path: polygon(0 16%, 100% 0%, 100% 100%, 0 84%);
+    background-color: #b993aa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 580px;
+    padding: 10% 10%;
+}
+
+.poziv {
+    text-align: center;
+    width: 50%;
+    margin-left: 200px;
+}
+
+.poziv p{
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+.slika {
+    align-self: center;
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+.slika img{
+    border: 15px groove #4f3243;
+    border-radius: 15px;
+    width: 300px;
+    height: 400px;
+}
+
+.slika a .button {
+    position: absolute;
+    top: 145px;
+    left: 50px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.foot a{
+    color: white;
+    font-weight: bold;
+}
+
+.foot12{
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+}
+
+.fLista{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.fLista li{
+    margin: auto 20px;
+    font-size: 17px;
+    padding: 3px 0;
+}
+
+
+footer a:hover{
+    color:#e6afd1;
+}
+
+footer h3{
+    text-align: center;
+    color: white;
+}
+
+.flista2{
+    padding-top: 35px;
+}
+
+.logoF{
+    padding-left: 50px;
+}
+
+hr{
+    background: linear-gradient(90deg, #945d7f, #ffffff, #945d7f);
+    border: none;
+    height: 1px;
+    margin-bottom: 5px;
+}
+
+.cr{
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}

@@ -1,0 +1,67 @@
+.header5{
+    background-color: rgb(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-image: url('../images/blog3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    width: 100%;
+    height: 560px;
+    padding-bottom: 5%;
+}
+
+.row1{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.row2{
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.naslovi2{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.row{
+    width: 80%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.col{
+    width: 550px;
+}
+
+.col p{
+    padding-top: 10px;
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+}
+  
+.card1 {
+    background-image: url(../images/wed11.PNG);
+}
+  
+.card2 {
+    background-image: url(../images/wed9.PNG);
+}
+
+.card3 {
+    background-image: url(../images/wed1.PNG);
+}
+  
+.card4 {
+    background-image: url(../images/wed5.PNG);
+}
+
+.button{
+    margin-left: 250px;
+}

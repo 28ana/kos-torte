@@ -1,0 +1,90 @@
+.header7{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    width: 100%;
+    height: 560px;
+    padding-bottom: 5%;
+    background-color: #9f799f;
+    padding-left: 70px;
+}
+
+.kontakt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 560px;
+    /*text-align: center;*/
+    /*background-color: rgba(255, 255, 255, 0.185);*/
+    padding: 50px 100px;
+}
+
+.koraci {
+    margin-right: 100px;
+}
+
+#forma {
+    background-image: url(../images/chocolate.jpg);
+    background-size: cover;
+    width: 400px;
+    /*height: 400px;*/
+    text-align: center;
+    padding: 50px;
+    margin: 0 100px;
+    color: white;
+}
+
+#forma_email,
+#forma_ime,
+#grad,
+#forma_poruka {
+  width: 250px;
+  margin: 20px 0;
+  border: 5px solid #791245;
+}
+
+button {
+  background-color: #791245;
+  border: 5px solid darkred;
+  border-radius: 30%;
+  color: rgb(255, 240, 242);
+  margin-top: 10%;
+}
+
+#forma_poruka {
+  height: 100px;
+}
+
+textarea {
+    resize: none;
+}
+
+.mapa{
+    width: 100%;
+}
+#mapa {
+    margin: 0 10%;
+    margin-top: 3%;
+    width: 80vw;
+  }
+
+
+/* validacija */
+.error {
+  display: none;
+  margin-left: 10px;
+}
+
+.error_show {
+  color: red;
+  margin-left: 10px;
+}
+
+input.invalid,
+textarea.invalid {
+  border: 2px solid red;
+}
+
+input.valid,
+textarea.valid {
+  border: 2px solid green;
+}
